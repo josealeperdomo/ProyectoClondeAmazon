@@ -735,17 +735,6 @@ main article .comprar {
   }
 }
 @media only screen and (max-width: 1100px) {
-  main {
-    grid-template-columns: repeat(2, 1fr);
-    height: 3800px;
-    padding-top: 180px;
-  }
-  #asaid {
-    height: 5400px;
-  }
-  #focus {
-    height: 5340px;
-  }
   .nav-principal .devoluciones {
     display: none;
   }
@@ -755,18 +744,32 @@ main article .comprar {
   .nav-principal .buscador {
     width: 40%;
   }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    height: 3800px;
+    padding-top: 180px;
+  }
+  .piso {
+    gap: 15px;
+    grid-template-columns: 100px 180px 200px 150px;
+  }
   .pisotres {
     height: 720px;
     grid-template-columns: 80px 90px 70px 90px 90px 80px;
     grid-template-rows: 70px 100px 100px 80px 20px;
     gap: 40px;
   }
-  .piso {
-    gap: 15px;
-    grid-template-columns: 100px 180px 200px 150px;
+  #asaid {
+    height: 5400px;
+  }
+  #focus {
+    height: 5340px;
   }
 }
 @media only screen and (max-width: 755px) {
+  .nav-principal .hola {
+    display: none;
+  }
   main {
     grid-template-columns: repeat(1, 1fr);
     height: 7100px;
@@ -785,12 +788,6 @@ main article .comprar {
   }
   main article .seccioncaja .ofertas {
     width: 360px;
-  }
-  #asaid {
-    height: 9000px;
-  }
-  #focus {
-    height: 8940px;
   }
   .pisotres {
     height: 900px;
@@ -811,20 +808,22 @@ main article .comprar {
     gap: 20px;
     height: 100px;
   }
-  .nav-principal .hola {
-    display: none;
+  #asaid {
+    height: 9000px;
+  }
+  #focus {
+    height: 8940px;
   }
 }
 @media only screen and (max-width: 625px) {
-  .nav-abajo .vender {
+  .nav-principal .envio {
     display: none;
   }
-  .pisotres {
-    height: 1100px;
-    grid-template-columns: 80px 90px 70px 90px;
-    grid-template-rows: 70px 100px 100px 120px 110px 80px;
-    gap: 40px;
-    padding-top: 100px;
+  .nav-abajo {
+    height: 50px;
+  }
+  .nav-abajo .vender {
+    display: none;
   }
   .piso {
     gap: 50px;
@@ -837,11 +836,12 @@ main article .comprar {
     gap: 20px;
     height: 180px;
   }
-  .nav-principal .envio {
-    display: none;
-  }
-  .nav-abajo {
-    height: 50px;
+  .pisotres {
+    height: 1100px;
+    grid-template-columns: 80px 90px 70px 90px;
+    grid-template-rows: 70px 100px 100px 120px 110px 80px;
+    gap: 40px;
+    padding-top: 100px;
   }
   #asaid {
     height: 9545px;
@@ -851,6 +851,17 @@ main article .comprar {
   }
 }
 @media only screen and (max-width: 450px) {
+  .nav-abajo .todo:checked ~ label {
+    position: fixed;
+    top: 10px;
+    left: 300px;
+  }
+  aside {
+    width: 300px;
+  }
+  aside article h1 {
+    height: 120px;
+  }
   main article {
     height: 400px;
     width: 335px;
@@ -865,23 +876,6 @@ main article .comprar {
   main article .seccioncaja .ofertas {
     width: 300px;
   }
-  .nav-abajo .todo:checked ~ label {
-    position: fixed;
-    top: 10px;
-    left: 300px;
-  }
-  aside {
-    width: 300px;
-  }
-  aside article h1 {
-    height: 120px;
-  }
-  .pisotres {
-    height: 1500px;
-    grid-template-columns: 80px 90px 70px;
-    grid-template-rows: 70px 100px 100px 120px 110px 110px 80px;
-    gap: 40px;
-  }
   .piso {
     gap: 50px;
     grid-template-columns: 100px 200px;
@@ -892,6 +886,12 @@ main article .comprar {
     flex-direction: column;
     gap: 20px;
     height: 180px;
+  }
+  .pisotres {
+    height: 1500px;
+    grid-template-columns: 80px 90px 70px;
+    grid-template-rows: 70px 100px 100px 120px 110px 110px 80px;
+    gap: 40px;
   }
   #asaid {
     height: 10000px;
